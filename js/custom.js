@@ -271,6 +271,10 @@ $(function() {
         })
 
 
+    $('.site-nav-wrap li a').click(function() {
+        $("body").removeClass("offcanvas-menu");
+        $(".burger").removeClass("active");
+    })
 
 })
 
