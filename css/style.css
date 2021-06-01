@@ -329,7 +329,7 @@ h4,
 
 .site-nav .site-navigation .site-menu > li > a {
   font-size: 14px;
-  padding: 10px 15px;
+  padding: 15px 15px 10px 15px;
   display: inline-block;
   text-decoration: none !important;
   color: rgba(255, 255, 255, 0.5);
