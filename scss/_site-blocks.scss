@@ -404,3 +404,18 @@
 .tab-content {
     width: 100%;
 }
+
+.addline {
+    position: fixed;
+    z-index: 1900;
+    width: 3rem;
+    height: 3rem;
+    bottom: 2rem;
+    right: 0;
+    text-align: center;
+    background-color: $white;
+    border-radius: .5rem;
+    i {
+        font-size: 3rem;
+    }
+}
