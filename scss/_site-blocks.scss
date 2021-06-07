@@ -27,17 +27,15 @@
             background: url('../images/dots.png') right top;
         }
     }
-}
-
-@include media-breakpoint-down(xl) {
-    .untree_co-hero {
+    @include media-breakpoint-down(xl) {
         overflow-x: hidden;
     }
 }
 
 .untree_co-counter {
+    text-align: center;
     strong {
-        font-size: 40px;
+        font-size: 3rem;
         font-weight: 700;
         span {
             color: $primary;
@@ -82,12 +80,12 @@
         padding: 50px 0;
     }
     .heading {
-        font-size: 50px;
+        font-size: 2.5rem;
         strong {
             font-weight: 700;
         }
         @include media-breakpoint-down(md) {
-            font-size: 30px;
+            font-size: 1.5rem;
         }
     }
 }

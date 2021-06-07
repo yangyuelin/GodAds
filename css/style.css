@@ -859,6 +859,10 @@ h4,
   outline: none;
 }
 
+.untree_co-hero {
+  overflow-x: hidden;
+}
+
 .untree_co-hero,
 .untree_co-hero > .container > .row {
   height: 100vh;
@@ -893,12 +897,12 @@ h4,
   background: url("../images/dots.png") right top;
 }
 
-.untree_co-hero {
-  overflow-x: hidden;
+.untree_co-counter {
+  text-align: center;
 }
 
 .untree_co-counter strong {
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -952,7 +956,7 @@ h4,
 }
 
 .untree_co-section .heading {
-  font-size: 50px;
+  font-size: 2.5rem;
 }
 
 .untree_co-section .heading strong {
@@ -961,7 +965,7 @@ h4,
 
 @media (max-width: 991.98px) {
   .untree_co-section .heading {
-    font-size: 30px;
+    font-size: 1.5rem;
   }
 }
 
