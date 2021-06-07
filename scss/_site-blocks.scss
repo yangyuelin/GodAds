@@ -118,7 +118,7 @@
         z-index: 1;
         width: 100%;
         position: absolute;
-        top: 15%;
+        top: 20%;
         @include media-breakpoint-up(md) {
             top: 0;
         }
@@ -138,7 +138,7 @@
     }
     @include media-breakpoint-down(sm) {
         img.img-2 {
-            width: 80%;
+            width: 90%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -163,26 +163,39 @@
 
 .Banner2-owl-carousel {
     .item {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     p {
         text-align: center;
         margin-top: 1rem;
         border-bottom: 1px solid $primary;
     }
-}
-
-.img-ad {
-    border-radius: 25px;
-    border: .25rem solid $white;
-    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+    .img-ad {
+        height: 80vh;
+        max-height: 550px;
+        object-fit: cover;
+        border-radius: 15px;
+        // border: .25rem solid $white;
+        box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+    }
+    @include media-breakpoint-up(sm) {
+        .item {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+        .img-ad {
+            height: auto;
+            max-height: none;
+            border-radius: 25px;
+        }
+    }
 }
 
 .nav-item {
     >a {
         position: relative;
-        color: $primary;
+        // color: $primary;
         margin-left: .5rem;
         margin-right: .5rem;
         &:hover,
@@ -266,6 +279,10 @@
                 margin-left: 0;
             }
         }
+        .img-wrap {
+            width: 60%;
+            flex: 0 0 60%;
+        }
     }
     @include media-breakpoint-down(sm) {
         &.first {
@@ -291,7 +308,6 @@
         position: relative;
         z-index: 1;
         flex: 0 0 50%;
-        @include media-breakpoint-up(sm) {}
     }
     .service-body {
         position: relative;
