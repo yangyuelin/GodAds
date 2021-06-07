@@ -114,48 +114,50 @@
 
 .stack-img {
     position: relative;
-    margin-bottom: -30%;
-    .img-1 {
-        // float: left;
+    .img-bg {
         z-index: 1;
         width: 100%;
+        position: absolute;
+        top: 15%;
+        @include media-breakpoint-up(md) {
+            top: 0;
+        }
     }
-    .Banner-owl-carousel {
-        transform: translateY(-40%);
-        z-index: 2;
-        .img-2 {
-            // right: left;      
-            z-index: 10;
-            width: 50%;
-            margin-top: 0;
-            margin-left: 50%;
+}
+
+.Banner-owl-carousel {
+    .item {
+        @include media-breakpoint-up(md) {
+            margin-top: 15%;
         }
-        @include media-breakpoint-down(sm) {
-            .img-2 {
-                width: 80%;
-                margin-left: 20%;
-            }
-        }
-        .block {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 10;
-            margin-top: 5%;
-            width: 40%;
-            background-color: #fff;
-            padding: 20px;
-            @include media-breakpoint-down(sm) {
-                display: block;
-                position: relative;
-                width: 100%;
-                margin-top: 20px;
-            }
-        }
+    }
+    img.img-2 {
+        right: left;
+        width: 50%;
+        margin-left: 50%;
     }
     @include media-breakpoint-down(sm) {
-        margin-bottom: -80%;
-        margin-top: 20%;
+        img.img-2 {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .block {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        margin-top: 5%;
+        width: 40%;
+        background-color: #fff;
+        padding: 20px;
+        @include media-breakpoint-down(sm) {
+            display: block;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+        }
     }
 }
 
