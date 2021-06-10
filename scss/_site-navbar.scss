@@ -25,15 +25,16 @@
 
 .burger {
     position: relative;
-    top: 4px;
+    // top: 4px;
 }
 
 .site-nav {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
     .site-navigation {
+        display: flex;
+        align-items: center;
         .site-menu {
             margin-bottom: 0;
+            margin-left: auto;
             >li {
                 display: inline-block;
                 >a {
@@ -240,6 +241,10 @@
             }
         }
     }
+    @include media-breakpoint-up(lg) {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
 }
 
 .site-mobile-menu-close {
@@ -325,7 +330,7 @@
         }
     }
     .site-mobile-menu-body {
-        overflow-y: scroll;
+        // overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         position: relative;
         padding: 0 20px 20px 20px;

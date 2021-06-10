@@ -311,16 +311,20 @@ h4,
 
 .burger {
   position: relative;
-  top: 4px;
 }
 
-.site-nav {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+.site-nav .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .site-nav .site-navigation .site-menu {
   margin-bottom: 0;
+  margin-left: auto;
 }
 
 .site-nav .site-navigation .site-menu > li {
@@ -517,6 +521,13 @@ h4,
   color: #000000;
 }
 
+@media (min-width: 992px) {
+  .site-nav {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+}
+
 .site-mobile-menu-close {
   display: block;
   position: relative;
@@ -616,7 +627,6 @@ h4,
 }
 
 .site-mobile-menu .site-mobile-menu-body {
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   position: relative;
   padding: 0 20px 20px 20px;
@@ -1368,6 +1378,19 @@ h4,
 .site-footer {
   background: #efefef;
   padding: 70px 0;
+  position: relative;
+}
+
+.site-footer::before {
+  position: absolute;
+  content: '';
+  opacity: .1;
+  background: url(../images/footer-bg.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
 }
 
 .site-footer a {
@@ -1390,7 +1413,7 @@ h4,
 .site-footer .widget h3 {
   font-size: 1.25rem;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .site-footer .logotext {
@@ -1398,28 +1421,38 @@ h4,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .site-footer .logotext img {
-  width: 50%;
-  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-height: 2.5rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  margin-right: .5rem;
 }
 
 .site-footer .logotext img:first-child {
-  padding: 0.5rem;
+  background: none;
   border-right: 1px solid #ced4da;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .site-footer .logotext img {
     width: auto;
-    height: 4rem;
+    max-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-footer .logotext {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
