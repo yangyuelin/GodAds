@@ -40,15 +40,15 @@
         justify-content: center;
         img {
             align-self: center;
-            // width: 30%
-            max-height: 2.5rem;
+            width: auto;
+            max-height: 3rem;
             padding: 0.5rem;
             background-color: #fff;
             margin-right: .5rem;
-            &:first-child {
-                background: none;
-                border-right: 1px solid $gray-400;
-            }
+            // &:first-child {
+            //     background: none;
+            //     border-right: 1px solid $gray-400;
+            // }
         }
         @include media-breakpoint-up(md) {
             img {
